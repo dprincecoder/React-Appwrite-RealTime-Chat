@@ -2,10 +2,6 @@
 
 A chat app with real-time capabilities that utilizes Appwrite on the backend. 
 
-> Tutorial Link Will be added here when posted.
-
-<img src="images/demo.png"/>
-
 ### Getting Started
 
 After cloning the repo ensure you complete the necessary installations
@@ -20,10 +16,11 @@ Create a new `.env` folder and create the necessary variables based on the `src/
 ```js
 //appwrite.Config.js
 ...
-export const API_ENDPOINT = import.meta.env.VITE_API_ENDPOINT
+export const API_ENDPOINT = import.meta.env.VITE_API_ENDPOINT 
 export const PROJECT_ID = import.meta.env.VITE_PROJECT_ID
 export const DATABASE_ID = import.meta.env.VITE_DATABASE_ID
 export const COLLECTION_ID_MESSAGES = import.meta.env.VITE_COLLECTION_ID_MESSAGES
+// set env for your keys
 
 const client = new Client()
     .setEndpoint(API_ENDPOINT) 
